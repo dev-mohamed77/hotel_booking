@@ -1,0 +1,189 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "Hotel Booking API",
+        "description": "Hotel Booking System API",
+        "version": "1.0.0"
+    },
+    "host": "localhost:3100",
+    "basePath": "/",
+    "schemes": [
+        "http"
+    ],
+    "consumes": [
+        "application/json"
+    ],
+    "produces": [
+        "application/json"
+    ],
+    "paths": {
+        "/customer": {
+            "get": {
+                "description": "Get all customers",
+                "produces": [
+                    "application/json"
+                ],
+                "responses": {
+                    "200": {
+                        "description": "A List of Customers",
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "$ref": "#/definitions/customer"
+                            }
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "401": {
+                        "description": "Unauthorized"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    }
+                },
+                "tags": [
+                    "Customer"
+                ]
+            },
+            "post": {
+                "description": "Create a new customer",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Customer object that needs to be added to the store",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/customer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful operation",
+                        "schema": {
+                            "$ref": "#/definitions/customer"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "401": {
+                        "description": "Unauthorized"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    }
+                },
+                "tags": [
+                    "Customer"
+                ]
+            }
+        },
+        "/customer/{id}": {
+            "put": {
+                "description": "Update an existing customer",
+                "produces": [
+                    "application/json"
+                ],
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "description": "Customer id is required",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "body",
+                        "in": "body",
+                        "description": "Customer object that needs to be updated in the store",
+                        "required": true,
+                        "schema": {
+                            "$ref": "#/definitions/customer"
+                        }
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "Successful operation",
+                        "schema": {
+                            "$ref": "#/definitions/customer"
+                        }
+                    },
+                    "400": {
+                        "description": "Bad Request"
+                    },
+                    "401": {
+                        "description": "Unauthorized"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    },
+                    "404": {
+                        "description": "Not Found"
+                    }
+                },
+                "tags": [
+                    "Customer"
+                ]
+            }
+        }
+    },
+    "definitions": {
+        "customer": {
+            "required": {},
+            "properties": {
+                "customer_id": {
+                    "type": "integer"
+                },
+                "customer_name": {
+                    "type": "string"
+                },
+                "customer_email": {
+                    "type": "string"
+                },
+                "customer_username": {
+                    "type": "string"
+                },
+                "customer_password": {
+                    "type": "string"
+                },
+                "customer_admin": {
+                    "type": "string"
+                },
+                "customer_city": {
+                    "type": "string"
+                },
+                "customer_country": {
+                    "type": "string"
+                },
+                "customer_on_created": {
+                    "type": "string"
+                },
+                "customer_on_update": {
+                    "type": "string"
+                },
+                "gender": {
+                    "type": "string"
+                },
+                "mobile": {
+                    "type": "string"
+                }
+            }
+        }
+    }
+}

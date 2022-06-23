@@ -1,0 +1,30 @@
+Tue Jun 14 2022 08:17:33 GMT+0200 (Eastern European Standard Time) || error || password not Valid |
+Tue Jun 14 2022 08:17:33 GMT+0200 (Eastern European Standard Time) || error || Error Adding Customer | data : {"name":"password Valid","httpStatusCode":400,"description":"password not Valid","isOperational":true}
+Tue Jun 14 2022 08:21:34 GMT+0200 (Eastern European Standard Time) || error || password not Valid |
+Tue Jun 14 2022 08:21:34 GMT+0200 (Eastern European Standard Time) || error || Error Adding Customer | data : {"name":"password Valid","httpStatusCode":400,"description":"password not Valid","isOperational":true}
+Tue Jun 14 2022 08:22:49 GMT+0200 (Eastern European Standard Time) || error || password not Valid |
+Tue Jun 14 2022 08:22:49 GMT+0200 (Eastern European Standard Time) || error || Error Adding Customer | data : {"name":"password Valid","httpStatusCode":400,"description":"password not Valid","isOperational":true}
+Tue Jun 14 2022 08:24:40 GMT+0200 (Eastern European Standard Time) || error || password not Valid |
+Tue Jun 14 2022 08:24:40 GMT+0200 (Eastern European Standard Time) || error || Error Adding Customer | data : {"name":"password Valid","httpStatusCode":400,"description":"password not Valid","isOperational":true}
+Tue Jun 14 2022 08:25:39 GMT+0200 (Eastern European Standard Time) || error || password not Valid |
+Tue Jun 14 2022 08:25:39 GMT+0200 (Eastern European Standard Time) || error || Error Adding Customer | data : {"name":"password Valid","httpStatusCode":400,"description":"password not Valid","isOperational":true}
+Tue Jun 14 2022 08:26:58 GMT+0200 (Eastern European Standard Time) || error || password not Valid |
+Tue Jun 14 2022 08:26:58 GMT+0200 (Eastern European Standard Time) || error || Error Adding Customer | data : {"name":"password Valid","httpStatusCode":400,"description":"password not Valid","isOperational":true}
+Tue Jun 14 2022 08:27:31 GMT+0200 (Eastern European Standard Time) || error || password not Valid |
+Tue Jun 14 2022 08:27:31 GMT+0200 (Eastern European Standard Time) || error || Error Adding Customer | data : {"name":"password Valid","httpStatusCode":400,"description":"password not Valid","isOperational":true}
+Tue Jun 14 2022 08:33:06 GMT+0200 (Eastern European Standard Time) || error || password not Valid |
+Tue Jun 14 2022 08:33:06 GMT+0200 (Eastern European Standard Time) || error || Error Adding Customer | data : {"name":"password Valid","httpStatusCode":400,"description":"password not Valid","isOperational":true}
+Tue Jun 14 2022 08:33:42 GMT+0200 (Eastern European Standard Time) || info || RETURN ADD CUSTOMER SUCCESSFULLY | data : {"fieldCount":0,"affectedRows":1,"insertId":38,"serverStatus":2,"warningCount":0,"message":"","protocol41":true,"changedRows":0}
+Tue Jun 14 2022 08:35:03 GMT+0200 (Eastern European Standard Time) || error || name , email , username , gender , mobile are require |
+Tue Jun 14 2022 08:35:03 GMT+0200 (Eastern European Standard Time) || error || Error Adding Customer | data : {"name":"Field Required","httpStatusCode":400,"description":"name , email , username , gender , mobile are require","isOperational":true}
+Tue Jun 14 2022 08:35:37 GMT+0200 (Eastern European Standard Time) || error || Error login | data : {"code":"ER_PARSE_ERROR","errno":1064,"sqlMessage":"You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '?' at line 1","sqlState":"42000","index":0,"sql":"SELECT * FROM customer WHERE customer_username = 'ali' OR customer_email = ?"}
+Tue Jun 14 2022 08:40:37 GMT+0200 (Eastern European Standard Time) || error || Wrong username |
+Tue Jun 14 2022 08:40:37 GMT+0200 (Eastern European Standard Time) || error || Error login | data : {"name":"Wrong username","httpStatusCode":400,"description":"Wrong username","isOperational":true}
+Tue Jun 14 2022 08:43:06 GMT+0200 (Eastern European Standard Time) || error || Wrong username |
+Tue Jun 14 2022 08:43:06 GMT+0200 (Eastern European Standard Time) || error || Error login | data : {"name":"Wrong username","httpStatusCode":400,"description":"Wrong username","isOperational":true}
+Tue Jun 14 2022 08:43:57 GMT+0200 (Eastern European Standard Time) || error || Wrong username |
+Tue Jun 14 2022 08:43:57 GMT+0200 (Eastern European Standard Time) || error || Error login | data : {"name":"Wrong username","httpStatusCode":400,"description":"Wrong username","isOperational":true}
+Tue Jun 14 2022 08:44:05 GMT+0200 (Eastern European Standard Time) || error || Wrong password |
+Tue Jun 14 2022 08:44:05 GMT+0200 (Eastern European Standard Time) || error || Error login | data : {"name":"Wrong password","httpStatusCode":400,"description":"Wrong password","isOperational":true}
+Tue Jun 14 2022 08:44:46 GMT+0200 (Eastern European Standard Time) || error || Wrong password |
+Tue Jun 14 2022 08:44:46 GMT+0200 (Eastern European Standard Time) || error || Error login | data : {"name":"Wrong password","httpStatusCode":400,"description":"Wrong password","isOperational":true}

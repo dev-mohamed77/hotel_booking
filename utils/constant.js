@@ -1,0 +1,3 @@
+exports.constant = {
+    auditEvent: "audit"
+};
